@@ -252,6 +252,77 @@ const yakus = [
     closed: [true, 'yakuman'],
     example: [2, 2, 2, 33, 33, 34, 34, 34, 35, 35, 35, 36, 36, 36]
   },
+  {
+    name: 'daisuushii',
+    aka: '',
+    description: 'This hand has four groups (triplets or quads) of all four wind tiles.',
+    open: [true, 'yakuman'],
+    closed: [true, 'yakuman'],
+    example: [2, 2, 33, 33, 33, 34, 34, 34, 35, 35, 35, 36, 36, 36]
+  },
+  {
+    name: 'tsuuiisou',
+    aka: '',
+    description: 'Every group of tiles are composed of honor tiles.',
+    open: [true, 'yakuman'],
+    closed: [true, 'yakuman'],
+    example: [32, 32, 33, 33, 33, 34, 34, 34, 35, 35, 35, 36, 36, 36]
+  },
+  {
+    name: 'chinroutou',
+    aka: '',
+    description: 'Every group of tiles are composed of terminal tiles.',
+    open: [true, 'yakuman'],
+    closed: [true, 'yakuman'],
+    example: [1, 1, 9, 9, 9, 11, 11, 11, 19, 19, 19, 21, 21, 21]
+  },
+  {
+    name: 'ryuuiisou',
+    aka: '',
+    description: 'A hand composed entirely of green tiles: 2, 3, 4, 6 and 8 Sou and/or Hatsu.',
+    open: [true, 'yakuman'],
+    closed: [true, 'yakuman'],
+    example: [2, 2, 3, 3, 4, 4, 6, 6, 6, 8, 8, 31, 31, 31]
+  },
+  {
+    name: 'chuuren poutou',
+    aka: '',
+    description: 'A hand consisting of the tiles 1112345678999 in the same suit plus any one extra tile of the same suit.',
+    // open: [false, 'yakuman'],
+    closed: [true, 'yakuman'],
+    example: [1, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9, 9]
+  },
+  {
+    name: 'suukantsu',
+    aka: '',
+    description: 'Any hand with four calls of kan.',
+    open: [true, 'yakuman'],
+    closed: [true, 'yakuman'],
+    example: [1, 1, 1, 1, 12, 12, 12, 12, 28, 28, 28, 28, 31, 31, 31, 31]
+  },
+  {
+    name: 'tenhou',
+    aka: '',
+    description: 'The dealer hand is a winning hand even before discarding a tile.',
+    // open: [false, 'yakuman'],
+    closed: [true, 'yakuman'],
+    example: [1, 2, 3, 6, 6, 7, 8, 9, 12, 13, 14, 15, 16, 17, 22, 22]
+  },
+  {
+    name: 'chiihou',
+    aka: '',
+    description: 'The non-dealer hand is a winning hand with the first tile draw.',
+    // open: [false, 'yakuman'],
+    closed: [true, 'yakuman'],
+    example: [1, 2, 3, 6, 6, 7, 8, 9, 12, 13, 14, 15, 16, 17, 22, 22]
+  },
+  {
+    name: 'nagashi mangan',
+    aka: '',
+    description: 'All the discards are terminals and/or honors. In addition, none of these discards were called by other players.',
+    // open: [false, 'yakuman'],
+    closed: [true, 'yakuman'],
+  },
 ];
 // TODO
 // - Consider how to make translation of yakus ?
