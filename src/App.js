@@ -2,10 +2,11 @@ import { useCallback, useMemo, useState } from "react";
 
 import Yaku from "./components/Yaku";
 import Icon from "./components/Icon";
+import Separator from "./components/Separator";
 import yakus from "./functions/yakus";
 import logo from "./svgs/logo.svg";
+import salmon from "./svgs/salmon.svg";
 import "./App.less";
-import Separator from "./components/Separator";
 
 const App = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -44,6 +45,13 @@ const App = () => {
           ))}
         </div>
       </div>
+
+      <footer className="App__footer">
+        <a href="https://chinanwu.com">
+          <Icon src={salmon} alt="Salmon's icon" />
+          <span>Made by Salmon</span>
+        </a>
+      </footer>
     </>
   );
 };
