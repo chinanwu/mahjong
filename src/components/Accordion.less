@@ -1,0 +1,25 @@
+.Accordion {
+  background-color: #f7f4ea;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+
+  transition: all 0.3s; // TODO
+  overflow: hidden;
+}
+
+.Accordion__button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 0.6rem 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Accordion__content {
+  &[aria-hidden="true"] {
+    display: none;
+  }
+}

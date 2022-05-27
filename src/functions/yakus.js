@@ -31,6 +31,7 @@ export default [
     speed: -1, // varies
     difficulty: -1,
     example: [1, 2, 3, 7, 7, 7, 25, 26, 27, 11, 12, 13, 36, 36],
+    link: "https://riichi.wiki/Riichi",
   },
   {
     name: "tsumo",

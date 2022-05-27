@@ -1,5 +1,7 @@
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
+import Accordion from "./Accordion";
 
+import Tile from "./Tile";
 import "./Yaku.less";
 
 const mapSpeedToString = {
@@ -74,23 +76,26 @@ const Yaku = ({
       </div>
     </div>
     {example && (
-      <div className="Yaku__example">
-        <label>Example</label>
-        <div>{example}</div>
-      </div>
+      <Accordion label="Example">
+        <div className="Yaku__tiles">
+          {example.map((tile, index) => (
+            <Tile key={`tile-${index}`} identifier={tile} />
+          ))}
+        </div>
+      </Accordion>
     )}
   </div>
 );
 
 Yaku.propTypes = {
-  name: propTypes.string,
-  aka: propTypes.string,
-  description: propTypes.string,
-  closed: propTypes.array,
-  open: propTypes.array,
-  speed: propTypes.number,
-  difficulty: propTypes.number,
-  example: propTypes.arrayOf(propTypes.number),
+  name: PropTypes.string,
+  aka: PropTypes.string,
+  description: PropTypes.string,
+  closed: PropTypes.array,
+  open: PropTypes.array,
+  speed: PropTypes.number,
+  difficulty: PropTypes.number,
+  example: PropTypes.arrayOf(PropTypes.number),
 };
 
 export default Yaku;

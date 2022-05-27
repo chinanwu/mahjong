@@ -72,8 +72,8 @@ module.exports = (env) => {
           ],
         },
         {
-          test: /\.svg$/,
-          use: ["html-loader"],
+          test: /\.(svg|tff)$/,
+          use: ["file-loader"],
         },
       ],
     },

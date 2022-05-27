@@ -1,9 +1,15 @@
-import { any } from "prop-types";
+import PropTypes from "prop-types";
 
-const Icon = ({ icon }) => <div>{icon}</div>;
+import "./Icon.less";
+
+const Icon = ({ src, alt, size = "small" }) => (
+  <img className={`Icon--${size}`} src={src} alt={alt} />
+);
 
 Icon.propTypes = {
-  icon: any,
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  size: PropTypes.string,
 };
 
 export default Icon;
