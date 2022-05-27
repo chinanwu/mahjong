@@ -43,13 +43,21 @@ const Yaku = ({
     <div>
       <strong>description:</strong> {description}
     </div>
-    <div>
-      <strong>speed:</strong>
-      <span>{` ${mapSpeedToString[speed]}`}</span>
-    </div>
-    <div>
-      <strong>difficulty:</strong>
-      <span>{` ${mapDifficultyToString[difficulty]}`}</span>
+    <div className="Yaku__speedDifficulty">
+      <div>
+        <strong>speed:</strong>
+        <div
+          className={`Yaku__speedDifficultyIcon Yaku__speedDifficultyIcon--${speed}`}
+        />
+        {mapSpeedToString[speed]}
+      </div>
+      <div>
+        <strong>difficulty:</strong>
+        <div
+          className={`Yaku__speedDifficultyIcon Yaku__speedDifficultyIcon--${difficulty}`}
+        />
+        {mapDifficultyToString[difficulty]}
+      </div>
     </div>
     <div className="Yaku__handTypes">
       <div className="Yaku__handType">
@@ -66,7 +74,7 @@ const Yaku = ({
       </div>
     </div>
     {example && (
-      <div>
+      <div className="Yaku__example">
         <label>Example</label>
         <div>{example}</div>
       </div>

@@ -8,6 +8,10 @@
   // &:hover {
   //   box-shadow: TODO
   // }
+
+  & > div {
+    margin-top: 0.6rem;
+  }
 }
 
 .Yaku__name {
@@ -20,10 +24,56 @@
 }
 
 .Yaku__aka {
-  margin-top: 0.4rem;
   text-align: center;
   color: #4f4f4f;
   font-style: italic;
+}
+
+.Yaku__speedDifficulty {
+  display: flex;
+
+  & > div {
+    width: 50%;
+  }
+}
+
+.Yaku__speedDifficultyIcon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.4rem;
+}
+
+.Yaku__speedDifficultyIcon---1 {
+  background-color: #909090;
+}
+
+.Yaku__speedDifficultyIcon--1 {
+  background-color: green;
+}
+
+.Yaku__speedDifficultyIcon--2 {
+  background-color: greenyellow;
+}
+
+.Yaku__speedDifficultyIcon--3 {
+  background-color: yellow;
+}
+
+.Yaku__speedDifficultyIcon--4 {
+  background-color: orange;
+}
+
+.Yaku__speedDifficultyIcon--5 {
+  background-color: red;
+}
+
+.Yaku__speedDifficultyIcon--6 {
+  background-color: darkred;
+}
+
+.Yaku__speedDifficultyIcon--99 {
+  background-color: yellow;
 }
 
 .Yaku__handTypes {
@@ -49,4 +99,10 @@
   & > span {
     text-decoration: none;
   }
+}
+
+.Yaku__example {
+  background-color: #f7f4ea;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
 }

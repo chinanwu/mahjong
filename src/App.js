@@ -3,7 +3,7 @@ import Yaku from "./components/Yaku";
 import "./App.less";
 
 const App = () => (
-  <div>
+  <>
     <h1>Mahjong Helper</h1>
     <p>How do I play?</p>
 
@@ -14,13 +14,13 @@ const App = () => (
         <button>Filter</button>
         <input placeholder="Search by name" />
       </div>
-      <div>
+      <div className="Yakus__list">
         {yakus.map((yaku, index) => (
           <Yaku key={`yaku-${index}`} {...yaku} />
         ))}
       </div>
     </div>
-  </div>
+  </>
 );
 
 export default App;
