@@ -1,0 +1,11 @@
+name: Mahjong Helper actions
+on: [workflow_dispatch]
+jobs:
+  install:
+    steps:
+      - name: Install dependencies
+        run: npm i
+  test:
+    steps:
+      - name: Run unit tests
+        run: npm t

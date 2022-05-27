@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 113 158">
+  <rect width="113" height="158" fill="#fff" rx="10"/>
+  <rect width="15.7" height="66.3" fill="#208032" rx="7.9" transform="scale(1 -1) rotate(32.5 279 16.7)"/>
+  <rect width="4.5" height="18.9" fill="#fff" rx="2.2" transform="scale(1 -1) rotate(32.5 208.9 6.7)"/>
+  <ellipse fill="#fff" rx="2.2" ry="2.7" transform="scale(1 -1) rotate(32.5 219.4 13.9)"/>
+  <rect width="15.7" height="58" fill="#208032" rx="7.9" transform="matrix(1 0 0 -1 15 144.6)"/>
+  <rect width="4.5" height="16.6" fill="#fff" rx="2.2" transform="matrix(1 0 0 -1 20.6 137.5)"/>
+  <rect width="4.5" height="16.6" fill="#fff" rx="2.2" transform="matrix(1 0 0 -1 20.6 110.2)"/>
+  <ellipse fill="#fff" rx="2.2" ry="2.4" transform="matrix(1 0 0 -1 22.9 116.2)"/>
+  <rect width="15.7" height="66.3" x="61.2" y="147.6" fill="#208032" rx="7.9" transform="rotate(-147.5 61.2 147.6)"/>
+  <rect width="4.5" height="18.9" x="60.9" y="137.7" fill="#fff" rx="2.2" transform="rotate(-147.5 60.9 137.7)"/>
+  <rect width="4.5" height="18.9" x="77.6" y="111.5" fill="#fff" rx="2.2" transform="rotate(-147.5 77.6 111.5)"/>
+  <ellipse cx="72.1" cy="116" fill="#fff" rx="2.2" ry="2.7" transform="rotate(-147.5 72 116)"/>
+  <rect width="4.5" height="18.9" fill="#fff" rx="2.2" transform="scale(1 -1) rotate(32.5 262.2 22.2)"/>
+  <rect width="15.7" height="58" x="99" y="144.8" fill="#208032" rx="7.9" transform="rotate(-180 99 144.8)"/>
+  <rect width="4.5" height="16.6" x="93.3" y="137.7" fill="#fff" rx="2.2" transform="rotate(-180 93.3 137.7)"/>
+  <rect width="4.5" height="16.6" x="93.3" y="110.4" fill="#fff" rx="2.2" transform="rotate(-180 93.3 110.4)"/>
+  <ellipse cx="91.1" cy="116.4" fill="#fff" rx="2.2" ry="2.4" transform="rotate(-180 91.1 116.4)"/>
+  <rect width="15.7" height="66.3" x="52.7" y="10.2" fill="#208032" rx="7.9" transform="rotate(32.5 52.7 10.2)"/>
+  <rect width="4.5" height="18.9" x="36.3" y="46.3" fill="#fff" rx="2.2" transform="rotate(32.5 36.3 46.3)"/>
+  <ellipse cx="41.9" cy="41.8" fill="#fff" rx="2.2" ry="2.7" transform="rotate(32.5 41.9 41.8)"/>
+  <rect width="15.7" height="58" x="15" y="13" fill="#208032" rx="7.9"/>
+  <rect width="4.5" height="16.6" x="20.6" y="20.1" fill="#fff" rx="2.2"/>
+  <rect width="4.5" height="16.6" x="20.6" y="47.3" fill="#fff" rx="2.2"/>
+  <ellipse cx="22.9" cy="41.4" fill="#fff" rx="2.2" ry="2.4"/>
+  <rect width="15.7" height="66.3" fill="#208032" rx="7.9" transform="scale(-1 1) rotate(32.5 -47.8 -100)"/>
+  <rect width="4.5" height="18.9" fill="#fff" rx="2.2" transform="scale(-1 1) rotate(32.5 -64.5 -94.4)"/>
+  <rect width="4.5" height="18.9" fill="#fff" rx="2.2" transform="scale(-1 1) rotate(32.5 -117.8 -110)"/>
+  <ellipse fill="#fff" rx="2.2" ry="2.7" transform="scale(-1 1) rotate(32.5 -107.4 -102.8)"/>
+  <rect width="4.5" height="18.9" x="53.1" y="20.1" fill="#fff" rx="2.2" transform="rotate(32.5 53 20)"/>
+  <rect width="15.7" height="58" fill="#208032" rx="7.9" transform="matrix(-1 0 0 1 99 12.8)"/>
+  <rect width="4.5" height="16.6" fill="#fff" rx="2.2" transform="matrix(-1 0 0 1 93.3 19.9)"/>
+  <rect width="4.5" height="16.6" fill="#fff" rx="2.2" transform="matrix(-1 0 0 1 93.3 47.1)"/>
+  <ellipse fill="#fff" rx="2.2" ry="2.4" transform="matrix(-1 0 0 1 91.1 41.2)"/>
+</svg>

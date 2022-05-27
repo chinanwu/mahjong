@@ -2,6 +2,7 @@
 
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const EsLintPlugin = require("eslint-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const productionConfig = () => {
   const mode = "production";
@@ -16,12 +17,17 @@ const devConfig = () => {
 };
 
 module.exports = (env) => {
+  const production = env.WEBPACK_SERVE;
   const plugins = [
-    new EsLintPlugin({ failOnError: !env.WEBPACK_SERVE }),
+    new EsLintPlugin({ failOnError: !production }),
     new HtmlWebPackPlugin({
       template: "./public/index.html",
     }),
   ];
+
+  if (production) {
+    plugins.push(new MiniCssExtractPlugin());
+  }
 
   const entry = ["./src/index.js"];
 
@@ -29,9 +35,7 @@ module.exports = (env) => {
     filename: "scripts/[chunkhash:5].js",
   };
 
-  const { mode, devtool } = env.WEBPACK_SERVE
-    ? productionConfig()
-    : devConfig();
+  const { mode, devtool } = production ? devConfig() : productionConfig();
 
   return {
     entry,
@@ -61,7 +65,15 @@ module.exports = (env) => {
         },
         {
           test: /\.less$/,
-          use: ["style-loader", "postcss-loader", "less-loader"],
+          use: [
+            production ? MiniCssExtractPlugin.loader : "style-loader",
+            "css-loader",
+            "less-loader",
+          ],
+        },
+        {
+          test: /\.svg$/,
+          use: ["html-loader"],
         },
       ],
     },

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 113 158">
+  <rect width="113" height="158" fill="#fff" rx="10"/>
+  <rect width="14" height="36" x="15" y="106" fill="#208032" rx="7"/>
+  <rect width="4" height="10.3" x="20" y="110.4" fill="#fff" rx="2"/>
+  <rect width="4" height="10.3" x="20" y="127.3" fill="#fff" rx="2"/>
+  <ellipse cx="22" cy="123.6" fill="#fff" rx="2" ry="1.5"/>
+  <rect width="14" height="36" x="84" y="106" fill="#208032" rx="7"/>
+  <rect width="4" height="10.3" x="89" y="110.4" fill="#fff" rx="2"/>
+  <rect width="4" height="10.3" x="89" y="127.3" fill="#fff" rx="2"/>
+  <ellipse cx="91" cy="123.6" fill="#fff" rx="2" ry="1.5"/>
+  <rect width="14" height="36" x="50" y="106" fill="#9C151E" rx="7"/>
+  <rect width="4" height="10.3" x="55" y="110.4" fill="#fff" rx="2"/>
+  <rect width="4" height="10.3" x="55" y="127.3" fill="#fff" rx="2"/>
+  <ellipse cx="57" cy="123.6" fill="#fff" rx="2" ry="1.5"/>
+  <rect width="14" height="36" x="15" y="61" fill="#208032" rx="7"/>
+  <rect width="4" height="10.3" x="20" y="65.4" fill="#fff" rx="2"/>
+  <rect width="4" height="10.3" x="20" y="82.3" fill="#fff" rx="2"/>
+  <ellipse cx="22" cy="78.6" fill="#fff" rx="2" ry="1.5"/>
+  <rect width="14" height="36" x="84" y="61" fill="#208032" rx="7"/>
+  <rect width="4" height="10.3" x="89" y="65.4" fill="#fff" rx="2"/>
+  <rect width="4" height="10.3" x="89" y="82.3" fill="#fff" rx="2"/>
+  <ellipse cx="91" cy="78.6" fill="#fff" rx="2" ry="1.5"/>
+  <rect width="14" height="36" x="50" y="61" fill="#9C151E" rx="7"/>
+  <rect width="4" height="10.3" x="55" y="65.4" fill="#fff" rx="2"/>
+  <rect width="4" height="10.3" x="55" y="82.3" fill="#fff" rx="2"/>
+  <ellipse cx="57" cy="78.6" fill="#fff" rx="2" ry="1.5"/>
+  <rect width="14" height="36" x="15" y="16" fill="#208032" rx="7"/>
+  <rect width="4" height="10.3" x="20" y="20.4" fill="#fff" rx="2"/>
+  <rect width="4" height="10.3" x="20" y="37.3" fill="#fff" rx="2"/>
+  <ellipse cx="22" cy="33.6" fill="#fff" rx="2" ry="1.5"/>
+  <rect width="14" height="36" x="84" y="16" fill="#208032" rx="7"/>
+  <rect width="4" height="10.3" x="89" y="20.4" fill="#fff" rx="2"/>
+  <rect width="4" height="10.3" x="89" y="37.3" fill="#fff" rx="2"/>
+  <ellipse cx="91" cy="33.6" fill="#fff" rx="2" ry="1.5"/>
+  <rect width="14" height="36" x="50" y="16" fill="#9C151E" rx="7"/>
+  <rect width="4" height="10.3" x="55" y="20.4" fill="#fff" rx="2"/>
+  <rect width="4" height="10.3" x="55" y="37.3" fill="#fff" rx="2"/>
+  <ellipse cx="57" cy="33.6" fill="#fff" rx="2" ry="1.5"/>
+</svg>
