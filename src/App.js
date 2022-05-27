@@ -1,6 +1,6 @@
 import yakus from "./yakus";
-import "./App.less";
 import Yaku from "./components/Yaku";
+import "./App.less";
 
 const App = () => (
   <div>
