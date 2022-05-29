@@ -120,3 +120,18 @@
   margin-right: 0.6rem;
   color: red;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .Yaku__speedDifficulty {
+    flex-direction: column;
+
+    & > div {
+      width: 100%;
+    }
+
+    & > div:first-child {
+      margin-bottom: @section-spacing;
+    }
+  }
+}
