@@ -1,55 +1,91 @@
 import PropTypes from "prop-types";
 
-import Icon from "./Icon";
+import {
+  BambooOne,
+  BambooTwo,
+  BambooThree,
+  BambooFour,
+  BambooFive,
+  BambooSix,
+  BambooSeven,
+  BambooEight,
+  BambooNine,
+} from "./tiles/Bamboo";
+import {
+  CircleOne,
+  CircleTwo,
+  CircleThree,
+  CircleFour,
+  CircleFive,
+  CircleSix,
+  CircleSeven,
+  CircleEight,
+  CircleNine,
+} from "./tiles/Circle";
+import {
+  HonourWhite,
+  HonourGreen,
+  HonourRed,
+  HonourNorth,
+  HonourEast,
+  HonourSouth,
+  HonourWest,
+} from "./tiles/Honour";
+import {
+  ManzuOne,
+  ManzuTwo,
+  ManzuThree,
+  ManzuFour,
+  ManzuFive,
+  ManzuSix,
+  ManzuSeven,
+  ManzuEight,
+  ManzuNine,
+} from "./tiles/Manzu";
+
+import "./Tile.less";
 
 const mapIdentifierToTile = {
-  1: "bamboo/1",
-  2: "bamboo/2",
-  3: "bamboo/3",
-  4: "bamboo/4",
-  5: "bamboo/5",
-  6: "bamboo/6",
-  6: "bamboo/6",
-  7: "bamboo/7",
-  8: "bamboo/8",
-  9: "bamboo/9",
-  11: "manzu/1",
-  12: "manzu/2",
-  13: "manzu/3",
-  14: "manzu/4",
-  15: "manzu/5",
-  16: "manzu/6",
-  16: "manzu/6",
-  17: "manzu/7",
-  18: "manzu/8",
-  19: "manzu/9",
-  21: "circle/1",
-  22: "circle/2",
-  23: "circle/3",
-  24: "circle/4",
-  25: "circle/5",
-  26: "circle/6",
-  26: "circle/6",
-  27: "circle/7",
-  28: "circle/8",
-  29: "circle/9",
-  30: "honours/white",
-  31: "honours/green",
-  32: "honours/red",
-  33: "honours/north",
-  34: "honours/east",
-  35: "honours/south",
-  36: "honours/west",
+  1: BambooOne,
+  2: BambooTwo,
+  3: BambooThree,
+  4: BambooFour,
+  5: BambooFive,
+  6: BambooSix,
+  7: BambooSeven,
+  8: BambooEight,
+  9: BambooNine,
+  11: ManzuOne,
+  12: ManzuTwo,
+  13: ManzuThree,
+  14: ManzuFour,
+  15: ManzuFive,
+  16: ManzuSix,
+  17: ManzuSeven,
+  18: ManzuEight,
+  19: ManzuNine,
+  21: CircleOne,
+  22: CircleTwo,
+  23: CircleThree,
+  24: CircleFour,
+  25: CircleFive,
+  26: CircleSix,
+  27: CircleSeven,
+  28: CircleEight,
+  29: CircleNine,
+  30: HonourWhite,
+  31: HonourGreen,
+  32: HonourRed,
+  33: HonourNorth,
+  34: HonourEast,
+  35: HonourSouth,
+  36: HonourWest,
 };
 
-const Tile = ({ identifier }) => (
-  <Icon
-    src={
-      require(`../svgs/tiles/${mapIdentifierToTile[identifier]}.svg`).default
-    }
-    alt={mapIdentifierToTile[identifier].replace("/", " ")}
-  />
-);
+const Tile = ({ identifier }) => {
+  const TileComponent = mapIdentifierToTile[identifier];
+  return <TileComponent className="Tile__component" />;
+};
 
 Tile.propTypes = {
   identifier: PropTypes.number,

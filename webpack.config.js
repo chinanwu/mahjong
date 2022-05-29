@@ -4,52 +4,53 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const EsLintPlugin = require("eslint-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const productionConfig = () => {
-  const mode = "production";
-  const devtool = "hidden-source-map";
-  return { mode, devtool };
-};
-
-const devConfig = () => {
-  const mode = "development";
-  const devtool = "eval-cheap-module-source-map";
-  return { mode, devtool };
-};
-
 module.exports = (env) => {
-  const production = env.WEBPACK_SERVE;
+  const isDev = env.WEBPACK_SERVE;
+
   const plugins = [
-    new EsLintPlugin({ failOnError: !production }),
+    new EsLintPlugin({ failOnError: !isDev }),
     new HtmlWebPackPlugin({
-      template: "./public/index.html",
+      template: "./src/index.html",
     }),
   ];
 
-  if (production) {
+  let filename, assetModuleFilename, styleLoader, mode, devtool, optimization;
+
+  if (isDev) {
+    mode = "development";
+    styleLoader = "style-loader";
+    devtool = "eval-cheap-module-source-map";
+    filename = "[name].js";
+    assetModuleFilename = "assets/[name][ext]";
+  } else {
+    mode = "production";
+    styleLoader = MiniCssExtractPlugin.loader;
+    devtool = "hidden-source-map";
+    filename = "scripts/[chunkhash:5].js";
+    assetModuleFilename = "assets/[contenthash:5][ext]";
+    optimization = {
+      runtimeChunk: true,
+      moduleIds: "deterministic",
+
+      //performant for smaller codebases, but can be costly in larger ones
+      removeAvailableModules: false,
+      removeEmptyChunks: false,
+      splitChunks: false,
+    };
     plugins.push(new MiniCssExtractPlugin());
   }
 
-  const entry = ["./src/index.js"];
-
-  const output = {
-    filename: "scripts/[chunkhash:5].js",
-  };
-
-  const { mode, devtool } = production ? devConfig() : productionConfig();
-
   return {
-    entry,
-    output,
+    entry: ["./src/index.js"],
+    output: {
+      filename,
+      assetModuleFilename,
+      publicPath: "/",
+    },
     target: ["web", "es2020"],
-    plugins,
     mode,
     devtool,
-    resolve: {
-      alias: {
-        react: "preact/compat",
-        "react-dom": "preact/compat",
-      },
-    },
+    optimization,
     module: {
       rules: [
         {
@@ -65,17 +66,20 @@ module.exports = (env) => {
         },
         {
           test: /\.less$/,
-          use: [
-            production ? MiniCssExtractPlugin.loader : "style-loader",
-            "css-loader",
-            "less-loader",
-          ],
+          use: [styleLoader, "css-loader", "less-loader"],
         },
         {
           test: /\.(svg|tff)$/,
-          use: ["file-loader"],
+          type: "asset/resource",
         },
       ],
+    },
+    plugins,
+    resolve: {
+      alias: {
+        react: "preact/compat",
+        "react-dom": "preact/compat",
+      },
     },
   };
 };

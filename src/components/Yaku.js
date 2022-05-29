@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import Accordion from "./Accordion";
 
+import Accordion from "./Accordion";
 import Tile from "./Tile";
 import "./Yaku.less";
 
@@ -35,6 +35,7 @@ const Yaku = ({
   speed,
   difficulty,
   example,
+  link,
 }) => (
   <div className="Yaku">
     <div className="Yaku__name">{name}</div>
@@ -64,16 +65,15 @@ const Yaku = ({
     <div className="Yaku__handTypes">
       <div className="Yaku__handType">
         <span>closed</span>
-        {closed && closed[0]
-          ? `: ${closed[1]}${typeof closed[1] === "number" ? " han" : ""}`
-          : ""}
+        {`: ${closed}${parseInt(closed) ? " han" : ""}`}
       </div>
       <div className={`Yaku__handType${open ? "" : " Yaku__handType--false"}`}>
         <span>open</span>
-        {open && open[0]
-          ? `: ${open[1]}${typeof open[1] === "number" ? " han" : ""}`
-          : ""}
+        {open ? `: ${open}${parseInt(open) ? " han" : ""}` : ""}
       </div>
+    </div>
+    <div className="Yaku__link">
+      <a href={link}>Learn more</a>
     </div>
     {example && (
       <Accordion label="Example">
@@ -96,6 +96,7 @@ Yaku.propTypes = {
   speed: PropTypes.number,
   difficulty: PropTypes.number,
   example: PropTypes.arrayOf(PropTypes.number),
+  link: PropTypes.string,
 };
 
 export default Yaku;

@@ -1,5 +1,7 @@
 @import "../styling/colours.less";
 
+@section-spacing: 1.2rem;
+
 .Yaku {
   border: @grey1 solid 1px;
   padding: 1.4rem 1.6rem;
@@ -11,7 +13,7 @@
   }
 
   & > div {
-    margin-top: 0.6rem;
+    margin-top: @section-spacing;
   }
 }
 
@@ -47,35 +49,35 @@
 }
 
 .Yaku__speedDifficultyIcon---1 {
-  background-color: @grey3;
+  background: @-1;
 }
 
 .Yaku__speedDifficultyIcon--1 {
-  background-color: @green;
+  background: @1;
 }
 
 .Yaku__speedDifficultyIcon--2 {
-  background-color: @lightGreen;
+  background: @2;
 }
 
 .Yaku__speedDifficultyIcon--3 {
-  background-color: @yellow;
+  background: @3;
 }
 
 .Yaku__speedDifficultyIcon--4 {
-  background-color: @orange;
+  background: @4;
 }
 
 .Yaku__speedDifficultyIcon--5 {
-  background-color: @red;
+  background: @5;
 }
 
 .Yaku__speedDifficultyIcon--6 {
-  background-color: @darkRed;
+  background: @6;
 }
 
 .Yaku__speedDifficultyIcon--99 {
-  background-color: @grey5;
+  background: @99;
 }
 
 .Yaku__handTypes {
@@ -96,8 +98,9 @@
 }
 
 .Yaku__handType--false {
-  background-color: @grey2;
-  color: @grey7;
+  background-color: @grey1;
+  color: @grey4;
+
   & > span {
     text-decoration: none;
   }
@@ -106,7 +109,14 @@
 .Yaku__tiles {
   width: 100%;
   margin: 1rem 0.6rem;
-  & > img {
+
+  & > svg {
     margin-right: 1rem;
   }
+}
+
+.Yaku__link:before {
+  content: ">";
+  margin-right: 0.6rem;
+  color: red;
 }

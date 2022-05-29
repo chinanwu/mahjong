@@ -2,21 +2,22 @@
   "name": "mahjong",
   "version": "1.0.0",
   "description": "Mahjong helper",
-  "main": "main.js",
   "scripts": {
     "start": "webpack s",
+    "build": "rm -rf dist && webpack build",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Running tests...\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chinanwu/mahjong.git"
   },
-  "author": "",
+  "author": "Salmon (Chin-An) Wu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chinanwu/mahjong/issues"
   },
-  "homepage": "https://github.com/chinanwu/mahjong#readme",
+  "homepage": "https://chinanwu.github.io/mahjong",
   "dependencies": {
     "preact": "^10.7.2",
     "prop-types": "^15.8.1"
@@ -30,7 +31,7 @@
     "eslint": "^8.16.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-webpack-plugin": "^3.1.1",
-    "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "less": "^4.1.2",
     "less-loader": "^11.0.0",
