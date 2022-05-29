@@ -1,0 +1,271 @@
+.Accordion {
+  background-color: #f7f4ea;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.Accordion__button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 0.6rem 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.Accordion__content[aria-hidden="true"] {
+  display: none;
+}
+
+.Tile__component {
+  width: 6rem;
+}
+
+.Yaku {
+  border: #e9ecef solid 1px;
+  padding: 1.4rem 1.6rem;
+  border-radius: 1rem;
+  transition: box-shadow 0.5s;
+}
+.Yaku:hover {
+  box-shadow: 0 0 0 0.6rem rgba(242, 242, 242, 0.5);
+}
+.Yaku > div {
+  margin-top: 1.2rem;
+}
+.Yaku__name {
+  text-transform: uppercase;
+  background-color: #212529;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 0.8rem 0;
+  font-family: "Karrik";
+}
+.Yaku__aka {
+  text-align: center;
+  color: #212529;
+  font-style: italic;
+}
+.Yaku__speedDifficulty {
+  display: flex;
+}
+.Yaku__speedDifficulty > div {
+  width: 50%;
+}
+.Yaku__speedDifficultyIcon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.4rem;
+}
+.Yaku__speedDifficultyIcon---1 {
+  background: #dee2e6;
+}
+.Yaku__speedDifficultyIcon--1 {
+  background: #4a7c59;
+}
+.Yaku__speedDifficultyIcon--2 {
+  background: #78945f;
+}
+.Yaku__speedDifficultyIcon--3 {
+  background: #f7c162;
+}
+.Yaku__speedDifficultyIcon--4 {
+  background: #dc5e38;
+}
+.Yaku__speedDifficultyIcon--5 {
+  background: #bf1919;
+}
+.Yaku__speedDifficultyIcon--6 {
+  background: #7d0d01;
+}
+.Yaku__speedDifficultyIcon--99 {
+  background: #559af5;
+}
+.Yaku__handTypes {
+  display: flex;
+}
+.Yaku__handTypes > :first-child {
+  margin-right: 1rem;
+}
+.Yaku__handType {
+  padding: 0.8rem;
+  background-color: #ded9e2;
+}
+.Yaku__handType > span {
+  text-decoration: underline;
+}
+.Yaku__handType--false {
+  background-color: #e9ecef;
+  color: #adb5bd;
+}
+.Yaku__handType--false > span {
+  text-decoration: none;
+}
+.Yaku__tiles {
+  width: 100%;
+  margin: 1rem 0.6rem;
+}
+.Yaku__tiles > svg {
+  margin-right: 1rem;
+}
+.Yaku__link:before {
+  content: ">";
+  margin-right: 0.6rem;
+  color: red;
+}
+
+.Icon--big {
+  width: 7rem;
+}
+.Icon--small {
+  width: 6rem;
+}
+
+.Separator {
+  margin-bottom: 1.6rem;
+  border-bottom: 1px solid #343a40;
+}
+
+@font-face {
+  font-family: "Karrik";
+  src: url(/assets/7f317.ttf);
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body,
+button {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 2.6rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h1,
+h2 {
+  font-family: "Karrik";
+  text-align: center;
+}
+button {
+  color: black;
+  border: none;
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+@media (prefers-reduced-motion) {
+  * {
+    transition: none;
+  }
+}
+.App__header {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App__header > img {
+  margin-right: 1rem;
+}
+.Yakus {
+  margin: 0 3rem;
+}
+.Yakus__bar {
+  display: flex;
+  justify-content: space-between;
+}
+.Yakus__filterButton {
+  background: #ced4da;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: border-radius 0.5s, background 0.2s;
+}
+.Yakus__filterButton:hover {
+  background: #dee2e6;
+}
+.Yakus__filterButton:active {
+  background: #adb5bd;
+}
+.Yakus__filterButton--squareBottom {
+  border-radius: 5px 5px 0 0;
+}
+.Yakus__filterBox {
+  border: 1px solid black;
+  width: fit-content;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.Yakus__filterBox > div {
+  margin-bottom: 1.6rem;
+}
+.Yakus__filterBox > div > label {
+  margin-right: 1rem;
+}
+.Yakus__filterBox > button {
+  align-self: flex-end;
+  margin-top: 1rem;
+}
+.Yakus__filterBox--hidden {
+  border: none;
+  display: none;
+}
+.Yakus__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.6rem;
+}
+.Yakus__list > div {
+  margin-bottom: 1.2rem;
+}
+.Yakus__emptyList {
+  text-align: center;
+}
+.App__footer > a {
+  margin: 3rem 0 1rem 0;
+  text-align: center;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.App__footer > a > img {
+  margin-bottom: 1rem;
+}
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .Yakus__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-gap: 1.2rem;
+    justify-content: center;
+  }
+  .Yakus__list > div {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .Yakus__list {
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .Yakus__list {
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  }
+}
+
