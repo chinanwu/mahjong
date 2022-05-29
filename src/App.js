@@ -22,9 +22,10 @@ const App = () => {
     [searchValue]
   );
 
-  const handleSearchChange = useCallback((e) => {
-    setSearchValue(e.target.value.toLowercase());
-  }, []);
+  const handleSearchChange = useCallback(
+    (e) => setSearchValue(e.target.value.toLowerCase()),
+    []
+  );
 
   const handleFilterToggle = useCallback(
     () => setIsFilterOpen((isFilterOpen) => !isFilterOpen),
