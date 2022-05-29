@@ -10,6 +10,12 @@ Mahjong helper
 - `npm start`
 - Open `localhost:8080/` in the browser of your choice
 
+## View it live
+
+- See the current iteration at
+
+https://chinanwu.github.io/mahjong/
+
 ## Running unit tests locally
 
 - `npm i`

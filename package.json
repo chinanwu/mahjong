@@ -5,7 +5,7 @@
   "scripts": {
     "start": "webpack s",
     "build": "rm -rf dist && webpack build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npm run build && gh-pages -d dist",
     "test": "echo \"Running tests...\""
   },
   "repository": {

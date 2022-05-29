@@ -1,5 +1,5 @@
 name: Mahjong Helper actions
-on: [push]
+on: [workflow_dispatch]
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -9,5 +9,3 @@ jobs:
         run: |
           npm i
           npm t
-          npm run build
-          npm run deploy

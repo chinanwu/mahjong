@@ -45,7 +45,8 @@ module.exports = (env) => {
     output: {
       filename,
       assetModuleFilename,
-      publicPath: "/",
+
+      publicPath: "/mahjong/",
     },
     target: ["web", "es2020"],
     mode,
