@@ -23,7 +23,7 @@ const App = () => {
   );
 
   const handleSearchChange = useCallback((e) => {
-    setSearchValue(e.target.value);
+    setSearchValue(e.target.value.toLowercase());
   }, []);
 
   const handleFilterToggle = useCallback(
