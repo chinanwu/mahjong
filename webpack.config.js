@@ -3,6 +3,7 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const EsLintPlugin = require("eslint-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = (env) => {
   const isDev = env.WEBPACK_SERVE;
@@ -36,6 +37,7 @@ module.exports = (env) => {
       removeAvailableModules: false,
       removeEmptyChunks: false,
       splitChunks: false,
+      minimizer: [`...`, new CssMinimizerPlugin()],
     };
     plugins.push(new MiniCssExtractPlugin());
   }
@@ -45,6 +47,7 @@ module.exports = (env) => {
     output: {
       filename,
       assetModuleFilename,
+      sourceMapFilename: "[file].map[query]",
       publicPath: isDev ? "/" : "/mahjong/",
     },
     target: ["web", "es2020"],
